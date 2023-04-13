@@ -22,6 +22,7 @@ public final class InfluxDbClientFactory {
                     .database(CONFIG.database())
                     .username(CONFIG.username())
                     .password(CONFIG.password())
+                    .token(CONFIG.token())
                     .connectTimeout(CONFIG.connectTimeout())
                     .readTimeout(CONFIG.readTimeout())
                     .build();
