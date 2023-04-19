@@ -129,7 +129,6 @@ public final class InfluxDbV2Client implements InfluxDbClient {
         .post(content)
         .build();
     try {
-      Logger.info("req.getHeaders()" + req.getHeaders().get("Authorization"));
       final HttpResponse response = httpClient.execute(req);
       final HttpRespStatus status = response.getStatus();
       if (status.statusClass() == SUCCESS) {
